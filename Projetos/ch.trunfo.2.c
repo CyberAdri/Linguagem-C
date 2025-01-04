@@ -72,7 +72,7 @@ void imprimirCidade(Cidade cid, char *codigo) {
     printf("\n\tÁrea: %.2f\n", cid.area);
     printf("\n\tPIB: %.2f\n", cid.PIB);
     
-	printf("\nA Densidade Populacional é : (%f) pessoas/km² \n\n", cid.densPopulacional+1); // incluso a soma da densidade após o usuário inserir as informações.//
+printf("\nA Densidade Populacional é : (%f) pessoas/km² \n\n", cid.densPopulacional+1); // incluso a soma da densidade após o usuário inserir as informações.//
 	
 }
 
