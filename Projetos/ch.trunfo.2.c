@@ -15,7 +15,7 @@ typedef struct {
 
 typedef struct {
     char nome[70];
-    Cidade cidades[10]; // Suporte para atÈ 10 cidades por estado
+    Cidade cidades[10]; // Suporte para at√© 10 cidades por estado
     int qtdCidades; // Quantidade de cidades cadastradas
 } Estado;
 
@@ -46,10 +46,10 @@ Cidade lerCidade(int cidadecod) {
     printf("\nDigite a quantidade populacional: \n");
     scanf("%d", &cid.populacao);
     fflush(stdin);
-    printf("\nDigite o n˙mero de pontos turÌsticos:\n ");
+    printf("\nDigite o n√∫mero de pontos tur√≠sticos:\n ");
     scanf("%d", &cid.npontosturisticos);
     fflush(stdin);;
-    printf("\nDigite a ·rea da cidade:\n ");
+    printf("\nDigite a √°rea da cidade:\n ");
     scanf("%f", &cid.area);
     fflush(stdin);
     printf("\nDigite o PIB da cidade:\n ");
@@ -67,12 +67,12 @@ void imprimirEstado(Estado est, int estadocod) {
 void imprimirCidade(Cidade cid, char *codigo) {
 	
     printf("\n\tCidade [%s]: %s\n", codigo, cid.nome);
-    printf("\n\tPopulaÁ„o: %d\n", cid.populacao);
-    printf("\n\tPontos turÌsticos: %d\n", cid.npontosturisticos);
-    printf("\n\t¡rea: %.2f\n", cid.area);
+    printf("\n\tPopula√ß√£o: %d\n", cid.populacao);
+    printf("\n\tPontos tur√≠sticos: %d\n", cid.npontosturisticos);
+    printf("\n\t√Årea: %.2f\n", cid.area);
     printf("\n\tPIB: %.2f\n", cid.PIB);
     
-	printf("\nA Densidade Populacional È : (%f) pessoas/km≤ \n\n", cid.densPopulacional+1);
+	printf("\nA Densidade Populacional √© : (%f) pessoas/km¬≤ \n\n", cid.densPopulacional+1); // incluso a soma da densidade ap√≥s o usu√°rio inserir as informa√ß√µes.//
 	
 }
 
@@ -93,7 +93,7 @@ int main() {
         }
     }
 
-    // Impress„o de estados e cidades com cÛdigos
+    // Impress√£o de estados e cidades com c√≥digos
     system("cls");
 
 
