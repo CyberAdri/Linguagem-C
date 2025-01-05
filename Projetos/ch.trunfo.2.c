@@ -10,7 +10,7 @@ typedef struct {
     float area;
     float PIB;
     float densPopulacional;
-    
+    float perCapita;
 } Cidade;
 
 typedef struct {
@@ -55,7 +55,8 @@ Cidade lerCidade(int cidadecod) {
     printf("\nDigite o PIB da cidade:\n ");
     scanf("%f", &cid.PIB);
     fflush(stdin);
-   
+	
+cid.perCapita = (cid.PIB/cid.populacao);  
 cid.densPopulacional = (cid.populacao/cid.area);
     return cid;
 }
@@ -72,7 +73,7 @@ void imprimirCidade(Cidade cid, char *codigo) {
     printf("\n\tÁrea: %.2f\n", cid.area);
     printf("\n\tPIB: %.2f\n", cid.PIB);
     
-printf("\nA Densidade Populacional é : (%f) pessoas/km² \n\n", cid.densPopulacional+1); // incluso a soma da densidade após o usuário inserir as informações.//
+printf("\nA Densidade Populacional é : (%.2f) pessoas/km² \n\n", cid.densPopulacional+1); // incluso a soma da densidade após o usuário inserir as informações.//
 	
 }
 
